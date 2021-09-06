@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Prueba HTML 5</title>
+</head>
+<body>
+    <form action="">
+        <p for="name">Nombre:</p>
+        <input type="text" id="name" name="nombre" autofocus required><br><br>
+        <p for="mail">Email:</p>
+        <input type="email" id="mail" name="mail" autocomplete="off" required><br><br>
+        <p for="password">Password:</p>
+        <input type="password" id="password" name="password" autocomplete="off" maxlength="20" minlength="8" required><br><br>
+        <p for="url">URL:</p>
+        <input type="url" id="url" name="url" placeholder="Escribe la URL de tu página web personal" required><br><br>
+        <p for="fecha">Fecha de nacimiento:</p>
+        <input type="date" id="fecha" name="fecha" required><br><br>
+        <p for="tel">Telefono:</p>
+        <input type="tel" id="tel" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+        <p for="Color">Color preferido:</p>
+        <input type="color" id="color" name="color"><br><br>
+        <p for="carrera">Carrera:</p>
+        <select form="carrera" id="carrera" autofocus>
+            <option value="Sistemas Computacionales">Sistemas Computacionales</option>
+            <option value="Sistemas Automotrices">Sistemas Automotrices</option>
+            <option value="Electronica">Electronica</option>
+            <option value="Gastronomia">Gastronomia</option>
+            <option value="Ambiental">Ambiental</option>
+        </select>
+        <br><br>
+        <p for="civilE">Estado Civil: </p>
+        <input type="radio" id="casado" name="civil" value="casado">
+        <label for="casado">casado</label>
+        <input type="radio" id="soltero" name="civil" value="soltero">
+        <label for="soltero">Soltero</label>
+        <input type="radio" id="unionL" name="civil" value="unionL">
+        <label for="unionL">Union Libre</label>
+        <input type="radio" id="viudo" name="civil" value="viudo">
+        <label for="viudo">viudo</label>
+        <input type="radio" id="divorciado" name="civil" value="divorciado">
+        <label for="divorciado">Divorciado</label>
+        
+        <p for="preferencias">Cursos de preferencia:</p>
+        <input type="checkbox" id="becas" value="becas"> <label for="becas">Becas</label>
+        <input type="checkbox" id="con" value="con"> <label for="con">Convocatorias de Emprendedores</label>
+        <input type="checkbox" id="concurso" value="concurso"> <label for="concurso">Concursos academicos</label>
+        <input type="checkbox" id="viaje" value="viaje"> <label for="viaje">Viajes de practica</label>
+        <input type="checkbox" id="Conferencias" value="Conferencias"> <label for="Conferencias">Conferencias</label>
+        <input type="checkbox" id="cong" value="cong"> <label for="cong">Congresos</label>
+        <input type="checkbox" id="Ninguno" value="Ninguno"> <label for="Ninguno">Ninguno</label><br><br>
+        <p><button type="submit">Enviar formulario</button></p>
+    </form>
+</body>
+</html>
